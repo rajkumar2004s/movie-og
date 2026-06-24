@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginLoginDiv {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+.loginLoginForm {
+    width: 100%;
+    max-width: 420px;
+    background-color: #111;
+    border: 1px solid #2d2d2d;
+    border-radius: 24px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loginWelcomeHead {
+    font-size: 32px;
+    color: #e11d48;
+    font-family: 'Edu NSW ACT Hand Pre', cursive;
+    text-align: center;
+}
+
+.loginWelcomeDes {
+    font-size: 16px;
+    color: #8e949f;
+    text-align: center;
+    font-family: Roboto, Sans-Serif;
+    margin-top: -10px;
+}
+
+.loginInputloginContainer,
+.loginInputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.loginInputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.loginInputWrapper .loginIcon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #8e949f;
+    font-size: 15px;
+}
+
+.loginEmailInput,
+.loginPasswordInput {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    border: 2px solid #353535;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loginEmailInput::placeholder,
+.loginPasswordInput::placeholder {
+    color: #7d7d7d;
+    font-style: italic;
+}
+
+.loginEmailInput:focus,
+.loginPasswordInput:focus {
+    border-color: #e11d48;
+    box-shadow: 0 0 3px #e11d48;
+}
+
+.loginEmailLabel,
+.loginPasswordLabel {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto, Sans-Serif;
+    letter-spacing: 1px;
+}
+
+.loginCheckboxDiv {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #575a62;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Roboto, Sans-Serif;
+}
+
+.loginCheckPara {
+    font-family: Roboto, Sans-Serif;
+}
+
+.loginAlreadySpan {
+    color: #e11d48;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: Roboto, Sans-Serif;
+}
+
+.loginCreateBtn {
+    background-color: #e11d48;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+.loginInputWrapper .fa-eye {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #8e949f;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.loginInputWrapper .fa-eye:hover {
+  color: #e11d48;
+}
+
+.loginCreateBtn:hover {
+    background-color: #be123c;
+    box-shadow: 0 4px 10px rgba(225, 29, 72, 0.4);
+}
+.loginInputWrapper .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #8e949f;
+  font-size: 15px;
+}
+
+.loginInputWrapper .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #8e949f;
+  font-size: 15px;
+}
+
+.loginInputWrapper .fa-eye,
+.loginInputWrapper .fa-eye-slash {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #8e949f;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.loginInputWrapper .fa-eye:hover,
+.loginInputWrapper .fa-eye-slash:hover {
+  color: #e11d48;
+}
+
+.loginAlreadyPara {
+    color: #575a62;
+    font-size: 15px;
+    text-align: center;
+    font-family: Roboto, Sans-Serif;
+    font-weight: 500;
+}
+@media (max-width: 500px) {
+    .loginLoginForm {
+        padding: 24px 18px;
+    }
+
+    .loginWelcomeHead {
+        font-size: 26px;
+    }
+
+    .loginWelcomeDes {
+        font-size: 14px;
+    }
+
+    .loginCreateBtn {
+        font-size: 15px;
+    }
+}
+
+.loginSocialDivider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.loginSocialDivider .loginLine {
+    flex: 1;
+    height: 1px;
+    background-color: #333;
+}
+
+.loginOrText {
+    color: #8e949f;
+    font-size: 16px;
+    white-space: nowrap;
+    font-family: Roboto, Sans-Serif;
+}
+
+.loginSocialButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.loginSocialBtn {
+    flex: 1;
+    padding: 12px 0;
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Roboto, Sans-Serif;
+}
+
+.loginSocialBtn:hover {
+    background-color: #2b2b2b;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.redirectionLogin {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;        /* vertically center */
+    justify-content: center;    /* horizontally center */
+    padding: 0 20px;
+    text-align: center;
+}
+
+.redirectHead {
+    color: #e11d48;
+    font-family: 'Edu NSW ACT Hand Pre', cursive;
+    font-weight: 600;
+    font-size: 60px;              
+    max-width: 90vw;           
+    line-height: 1.2;
+    animation: pulseScale 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseScale {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,16 @@
+.upcomingDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , 300px);
+    gap: 0px;
+    max-width: 1500px;
+    justify-content: center;
+    margin: auto;
+}
+.upcomingHead{
+     color: white;
+    font-size: 34px;
+    font-weight: 500;
+    padding: 22px 32px;
+    padding-bottom: 0;
+    font-family: 'Edu NSW ACT Hand Pre', cursive;
+}

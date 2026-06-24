@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    height: 90px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav-title h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e11d48;
+    cursor: pointer;
+    font-family: 'Edu NSW ACT Hand Pre', cursive;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li {
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.6s ease, transform 0.3s ease;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-links li:hover {
+    color: #f43f5e;
+    transform: scale(1.01);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.active-link {
+    color: #f43f5e;
+    font-weight: 700;
+    border-bottom: 2px solid #f43f5e;
+    padding-bottom: 6px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.signin-btn,
+.signup-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 22px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.signin-btn {
+    background: transparent;
+    color: #fff;
+}
+
+.signin-btn:hover {
+    color: #f43f5e;
+    transform: scale(1.05);
+}
+
+.signup-btn {
+    background-color: #e11d48;
+    color: #fff;
+}
+
+.signup-btn:hover {
+    background-color: #be123c;
+    transform: scale(1.05);
+}

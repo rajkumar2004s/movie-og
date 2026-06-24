@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.registrationDiv {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+.registerForm {
+    width: 100%;
+    max-width: 420px;
+    background-color: #111;
+    border: 1px solid #2d2d2d;
+    border-radius: 24px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.traiHead {
+    font-size: 32px;
+    color: #e11d48;
+    font-family: 'Edu NSW ACT Hand Pre', cursive;
+    text-align: center;
+}
+
+.traiDes {
+    font-size: 16px;
+    color: #8e949f;
+    text-align: center;
+    font-family: Roboto, Sans-Serif;
+    margin-top: -10px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.inputWrapper .icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #8e949f;
+    font-size: 15px;
+}
+
+.userInput,
+.passwordInput,
+.confirmpasswordInput,
+.emailInput {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    border: 2px solid #353535;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.userInput::placeholder,
+.passwordInput::placeholder,
+.confirmpasswordInput::placeholder,
+.emailInput::placeholder::placeholder {
+    color: #7d7d7d;
+    font-style: italic;
+}
+
+.userInput:focus,
+.passwordInput:focus,
+.confirmpasswordInput:focus,
+.emailInput:focus {
+    border-color: #e11d48;
+    box-shadow: 0 0 3px #e11d48;
+}
+
+.userLabel,
+.emailLabel,
+.passwordLabel,
+.confirmpasswordLabel {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto, Sans-Serif;
+    letter-spacing: 1px;
+}
+
+.checkboxDiv {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #575a62;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Roboto, Sans-Serif;
+}
+
+.checkSpan,
+.alreadySpan {
+    color: #e11d48;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: Roboto, Sans-Serif;
+}
+
+.createBtn {
+    background-color: #e11d48;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.createBtn:hover {
+    background-color: #be123c;
+    box-shadow: 0 4px 10px rgba(225, 29, 72, 0.4);
+}
+
+.alreadyPara {
+    color: #575a62;
+    font-size: 15px;
+    text-align: center;
+    font-family: Roboto, Sans-Serif;
+    font-weight: 500;
+}
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Existing left icon */
+.inputWrapper .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #8e949f;
+  font-size: 15px;
+}
+
+.inputWrapper .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #8e949f;
+  font-size: 15px;
+}
+
+.inputWrapper .fa-eye,
+.inputWrapper .fa-eye-slash {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #8e949f;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.inputWrapper .fa-eye:hover,
+.inputWrapper .fa-eye-slash:hover {
+  color: #e11d48;
+}
+
+
+@media (max-width: 500px) {
+    .registerForm {
+        padding: 24px 18px;
+    }
+
+    .traiHead {
+        font-size: 26px;
+    }
+
+    .traiDes {
+        font-size: 14px;
+    }
+
+    .createBtn {
+        font-size: 15px;
+    }
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #ffb347;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

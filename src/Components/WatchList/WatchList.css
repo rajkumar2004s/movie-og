@@ -1,0 +1,110 @@
+.watchmainDiv {
+  padding-top: 70px;
+}
+
+.watchHead {
+  color: white;
+  font-size: 34px;
+  font-weight: 500;
+  padding: 52px 32px;
+  padding-bottom: 0;
+  font-family: 'Edu NSW ACT Hand Pre', cursive;
+}
+
+.watchDiv {
+   padding-top: 0px;        
+  min-height: 100vh;
+   display: grid;
+    grid-template-columns: repeat(auto-fit , 300px);
+    gap: 0px;
+    justify-items: center;
+}
+
+.watchDes {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5f5959;
+  margin: 12px 0;
+  padding: 20px 32px;
+  background: rgba(26, 25, 25, 0.05);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.watchDes:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #888;
+  color: #fff;
+}
+
+.spinner-containerz {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Media Queries ---------- */
+@media (max-width: 1024px) {
+  .watchHead {
+    font-size: 30px;
+    padding: 24px;
+  }
+
+  .watchDes {
+    font-size: 1.3rem;
+    max-width: 280px;
+  }
+
+  .watchDiv {
+    padding: 24px;
+    gap: 20px;
+  }
+}
+
+/* Below 768px (tablets/large phones) */
+@media (max-width: 768px) {
+  .watchHead {
+    font-size: 26px;
+    padding: 20px;
+  }
+
+  .watchDes {
+    font-size: 1.1rem;
+    padding: 16px;
+  }
+
+  .watchDiv {
+    padding: 20px;
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Below 480px (mobile phones) */
+@media (max-width: 480px) {
+  .watchHead {
+    font-size: 2px;
+    padding: 66px 62px ;
+    padding-bottom: 0;
+  }
+
+  .watchDes {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .watchDiv {
+    padding: 16px;
+  }
+}

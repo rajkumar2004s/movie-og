@@ -1,0 +1,54 @@
+.trailerPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #000;
+  margin-top: 7%;
+}
+
+.trailerPlayer iframe {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;
+}
+
+.trailerPlayer .loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .trailerPlayer iframe {
+    height: 500px;
+    max-width: 900px;
+  }
+}
+@media (max-width: 768px) {
+  .trailerPlayer {
+    padding: 16px;
+    margin-top: 10%;
+  }
+
+  .trailerPlayer iframe {
+    height: 400px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .trailerPlayer {
+    padding: 12px;
+    margin-top: 12%;
+  }
+
+  .trailerPlayer iframe {
+    height: 250px;
+    max-width: 100%;
+  }
+}

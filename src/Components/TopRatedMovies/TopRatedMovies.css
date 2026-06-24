@@ -1,0 +1,25 @@
+.TopRatedMoviesDiv{
+    padding-top: 90px;
+}
+.TopRatedDiv{
+    padding-top: 0px;        
+  min-height: 100vh;
+   display: grid;
+    grid-template-columns: repeat(auto-fit , 300px);
+    gap: 0px;
+}
+.TopRatedMoviesDivHead{
+    color: white;
+    font-size: 34px;
+    font-weight: 500;
+    padding: 22px 32px;
+    padding-bottom: 0;
+    font-family: 'Edu NSW ACT Hand Pre', cursive;
+    color: white;
+  font-size: 34px;
+  font-weight: 500;
+  padding: 52px 32px;
+  padding-bottom: 0;
+  font-family: 'Edu NSW ACT Hand Pre', cursive;
+    
+}
